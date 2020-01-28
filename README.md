@@ -1,2 +1,2 @@
-# ngx-split-button
+# NgxSplitButton
 Angular split button component

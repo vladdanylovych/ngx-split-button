@@ -1,0 +1,45 @@
+<div class="examples">
+  <div class="demo-container">
+    <div class="title">
+      Left-aligned dropdown
+    </div>
+    <div class="component">
+      <ngx-split-button>
+        <ng-container *ngxSplitButton>
+          <button type="button" class="ngx-btn">
+            Test 1
+          </button>
+        </ng-container>
+        <ng-container *ngxDropdownItems>
+          <li><a class="ngx-dropdown-item" href="#">Action 1</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Action 2</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Action 3</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Action 4</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Action 5</a></li>
+        </ng-container>
+      </ngx-split-button>
+    </div>
+  </div>
+
+  <div class="demo-container">
+    <div class="title">
+      Right-aligned dropdown
+    </div>
+    <div class="component">
+      <ngx-split-button [alignDropdownRight]="true">
+        <ng-container *ngxSplitButton>
+          <button type="button" class="ngx-btn">
+            Test 2
+          </button>
+        </ng-container>
+        <ng-container *ngxDropdownItems>
+          <li><a class="ngx-dropdown-item" href="#">Example Action 1</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Example Action 2</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Example Action 3</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Example Action 4</a></li>
+          <li><a class="ngx-dropdown-item" href="#">Example Action 5</a></li>
+        </ng-container>
+      </ngx-split-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="ngx-btn-group">
+  <ng-container *ngTemplateOutlet="splitButtonTpl || defaultSplitButtonTpl"></ng-container>
+  <ng-container *ngTemplateOutlet="dropdownButtonTpl || defaultDropdownButtonTpl; context: getDropdownButtonTplContext()"></ng-container>
+  <ul class="ngx-dropdown-menu" [ngClass]="{
+      'ngx-dropdown-menu-left': !alignDropdownRight,
+      'ngx-dropdown-menu-right': alignDropdownRight,
+      'show': dropdownMenuOpened
+  }">
+    <ng-container *ngTemplateOutlet="dropdownItemsTpl || defaultDropdownItemsTpl"></ng-container>
+  </ul>
+</div>
+
+<ng-template #defaultSplitButtonTpl>
+  <button type="button" class="ngx-btn">
+    Button
+  </button>
+</ng-template>
+
+<ng-template #defaultDropdownButtonTpl>
+  <button type="button" class="ngx-btn ngx-dropdown-btn" (click)="toggleDropdownMenu()">
+    &#9662;
+  </button>
+</ng-template>
+
+<ng-template #defaultDropdownItemsTpl>
+  <li><a class="ngx-dropdown-item" href="#">Action 1</a></li>
+  <li><a class="ngx-dropdown-item" href="#">Action 2</a></li>
+</ng-template>

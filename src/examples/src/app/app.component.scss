@@ -1,0 +1,22 @@
+.examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .component {
+    margin-top: 20px;
+  }
+}

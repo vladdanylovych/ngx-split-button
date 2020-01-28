@@ -1,0 +1,94 @@
+.ngx-btn-group {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+
+  ::ng-deep {
+
+    .ngx-btn {
+      display: inline-block;
+      font-weight: 400;
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      outline: none;
+      color: #ffffff;
+      background-color: #224cc3;
+
+      &:first-of-type {
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+
+      &:last-of-type {
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+    }
+
+    .ngx-dropdown-btn {
+      border-left: 1px solid #ffffff;
+    }
+
+    .ngx-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: 5px 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-clip: padding-box;
+      box-shadow: 0 0 13px rgba(8, 28, 81, 0.29);
+      border-radius: 6px;
+      border: 1px solid #dcdee4;
+      background-color: #ffffff;
+
+      &.show {
+        display: block;
+      }
+
+      &.ngx-dropdown-menu-left {
+        left: 0;
+        right: auto;
+        top: 100%;
+        transform: translateY(0px);
+        bottom: auto;
+      }
+
+      &.ngx-dropdown-menu-right {
+        left: auto;
+        right: 0;
+        top: 100%;
+        transform: translateY(0px);
+        bottom: auto;
+      }
+    }
+
+    .ngx-dropdown-item {
+      color: #1e1e1e;
+      font-weight: 400;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: .5rem 1rem;
+      clear: both;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
