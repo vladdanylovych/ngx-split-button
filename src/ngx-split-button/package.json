@@ -1,6 +1,21 @@
 {
   "name": "ngx-split-button",
   "version": "0.0.1",
+  "description": "Angular split button component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladify/ngx-split-button.git"
+  },
+  "author": "Vladyslav Danylovych",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladify/ngx-split-button/issues"
+  },
+  "homepage": "https://github.com/vladify/ngx-split-button#readme",
+  "keywords": [
+    "angular",
+    "split button"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
