@@ -14,7 +14,10 @@ import {NgxDropdownItemsDirective} from './directives/ngx-dropdown-items.directi
 @Component({
   selector: 'ngx-split-button',
   templateUrl: './ngx-split-button.component.html',
-  styleUrls: ['./ngx-split-button.component.scss']
+  styleUrls: ['./ngx-split-button.component.scss'],
+  host: {
+    class: 'ngx-split-button'
+  }
 })
 export class NgxSplitButtonComponent implements OnInit {
 
