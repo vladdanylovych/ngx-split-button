@@ -20,7 +20,7 @@ before_script:
 
 script:
   - ng lint
-  - ng test ngx-split-button --watch=false --browsers=ChromeHeadless
+  - ng test ngx-split-button --watch=false --browsers=ChromeHeadless --code-coverage
   - ng build examples --prod --base-href /ngx-split-button/
 
 deploy:

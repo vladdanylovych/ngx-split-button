@@ -3,10 +3,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build": "ng build ngx-split-button && cp README.md dist/ngx-split-button/README.md"
   },
   "private": true,
   "dependencies": {
