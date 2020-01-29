@@ -1,9 +1,9 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[ngxDropdownButton]'
+  selector: '[ngxToggleIcon]'
 })
-export class NgxDropdownButtonDirective {
+export class NgxToggleIconDirective {
 
   constructor() { }
 

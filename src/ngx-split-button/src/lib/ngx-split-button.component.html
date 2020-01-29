@@ -1,25 +1,25 @@
 <div class="ngx-btn-group">
-  <ng-container *ngTemplateOutlet="splitButtonTpl || defaultSplitButtonTpl"></ng-container>
-  <ng-container *ngTemplateOutlet="dropdownButtonTpl || defaultDropdownButtonTpl; context: getDropdownButtonTplContext()"></ng-container>
-  <ul class="ngx-dropdown-menu" [ngClass]="{
-      'ngx-dropdown-menu-left': !alignDropdownRight,
-      'ngx-dropdown-menu-right': alignDropdownRight,
-      'show': dropdownMenuOpened
-  }">
-    <ng-container *ngTemplateOutlet="dropdownItemsTpl || defaultDropdownItemsTpl"></ng-container>
+  <ng-container *ngTemplateOutlet="splitButtonTpl || defaultSplitButtonTpl">
+  </ng-container>
+  <button #toggleBtn type="button" class="ngx-btn ngx-toggle-btn" (click)="toggleDropdownMenu()">
+    <ng-container *ngTemplateOutlet="toggleIconTpl || defaultToggleIconTpl">
+    </ng-container>
+  </button>
+  <ul class="ngx-dropdown-menu"
+      [ngClass]="{'ngx-dropdown-menu-left': !alignDropdownRight, 'ngx-dropdown-menu-right': alignDropdownRight, 'show': dropdownMenuOpened}">
+    <ng-container *ngTemplateOutlet="dropdownItemsTpl || defaultDropdownItemsTpl">
+    </ng-container>
   </ul>
 </div>
 
 <ng-template #defaultSplitButtonTpl>
   <button type="button" class="ngx-btn">
-    Button
+    {{btnName}}
   </button>
 </ng-template>
 
-<ng-template #defaultDropdownButtonTpl>
-  <button type="button" class="ngx-btn ngx-dropdown-btn" (click)="toggleDropdownMenu()">
-    &#9662;
-  </button>
+<ng-template #defaultToggleIconTpl>
+  &#9662;
 </ng-template>
 
 <ng-template #defaultDropdownItemsTpl>

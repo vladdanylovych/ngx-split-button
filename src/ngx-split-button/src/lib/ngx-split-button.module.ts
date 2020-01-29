@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { NgxSplitButtonComponent } from './ngx-split-button.component';
 import {CommonModule} from '@angular/common';
 import { NgxDropdownItemsDirective } from './directives/ngx-dropdown-items.directive';
-import { NgxSplitButtonDirective } from './directives/ngx-split-button.directive';
-import { NgxDropdownButtonDirective } from './directives/ngx-dropdown-button.directive';
+import { NgxToggleIconDirective } from './directives/ngx-toggle-icon.directive';
+import {NgxSplitButtonDirective} from './directives/ngx-split-button.directive';
 
 
 
@@ -12,7 +12,8 @@ import { NgxDropdownButtonDirective } from './directives/ngx-dropdown-button.dir
     NgxSplitButtonComponent,
     NgxDropdownItemsDirective,
     NgxSplitButtonDirective,
-    NgxDropdownButtonDirective],
+    NgxToggleIconDirective
+  ],
   imports: [
     CommonModule
   ],
@@ -20,7 +21,7 @@ import { NgxDropdownButtonDirective } from './directives/ngx-dropdown-button.dir
     NgxSplitButtonComponent,
     NgxDropdownItemsDirective,
     NgxSplitButtonDirective,
-    NgxDropdownButtonDirective
+    NgxToggleIconDirective
   ]
 })
 export class NgxSplitButtonModule { }
