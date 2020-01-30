@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import {NgxDropdownItemsDirective} from './directives/ngx-dropdown-items.directive';
 import {NgxToggleIconDirective} from './directives/ngx-toggle-icon.directive';
+import {NgxSplitButtonDirective} from './directives/ngx-split-button.directive';
 
 @Component({
   selector: 'ngx-split-button',
@@ -24,7 +25,7 @@ export class NgxSplitButtonComponent implements OnInit {
   @Input() name = 'Split Button';
   @Input() alignDropdownRight = false;
 
-  @ContentChild(NgxToggleIconDirective, { static: true, read: TemplateRef }) splitButtonTpl: TemplateRef<any>;
+  @ContentChild(NgxSplitButtonDirective, { static: true, read: TemplateRef }) splitButtonTpl: TemplateRef<any>;
   @ContentChild(NgxToggleIconDirective, { static: true, read: TemplateRef }) toggleIconTpl: TemplateRef<any>;
   @ContentChild(NgxDropdownItemsDirective, { static: true, read: TemplateRef }) dropdownItemsTpl: TemplateRef<any>;
 
