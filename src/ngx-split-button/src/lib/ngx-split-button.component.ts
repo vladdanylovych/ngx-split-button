@@ -1,9 +1,9 @@
 import {
   Component,
-  ContentChild,
+  ContentChild, EventEmitter,
   HostListener,
   Input,
-  OnInit,
+  OnInit, Output,
   TemplateRef, ViewChild
 } from '@angular/core';
 import {NgxDropdownItemsDirective} from './directives/ngx-dropdown-items.directive';
@@ -19,7 +19,9 @@ import {NgxToggleIconDirective} from './directives/ngx-toggle-icon.directive';
 })
 export class NgxSplitButtonComponent implements OnInit {
 
-  @Input() btnName = 'Split Button';
+  @Output() clickAction = new EventEmitter();
+
+  @Input() name = 'Split Button';
   @Input() alignDropdownRight = false;
 
   @ContentChild(NgxToggleIconDirective, { static: true, read: TemplateRef }) splitButtonTpl: TemplateRef<any>;

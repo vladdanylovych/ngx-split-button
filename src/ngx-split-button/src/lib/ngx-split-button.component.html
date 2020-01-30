@@ -13,8 +13,8 @@
 </div>
 
 <ng-template #defaultSplitButtonTpl>
-  <button type="button" class="ngx-btn">
-    {{btnName}}
+  <button type="button" class="ngx-btn" (click)="clickAction.emit()">
+    {{name}}
   </button>
 </ng-template>
 
