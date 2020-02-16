@@ -30,7 +30,7 @@ export class AppModule {}
 
 Left-aligned dropdown:
 
-```angular2html
+```html
 <ngx-split-button name="Test Button">
   <ng-container *ngxDropdownItems>
     <li><a class="ngx-dropdown-item" href="#">Action 1</a></li>
@@ -44,7 +44,7 @@ Left-aligned dropdown:
 
 Right-aligned dropdown: 
 
-```angular2html
+```html
 <ngx-split-button [alignDropdownRight]="true">
   <ng-container *ngxSplitButton>
     <button type="button" class="ngx-btn">
